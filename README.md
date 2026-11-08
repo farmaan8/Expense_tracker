@@ -3,6 +3,7 @@
 A 7th-semester Cloud Computing project: a personal expense tracker hosted on Amazon S3, with an Amazon API Gateway HTTP API, an AWS Lambda Python backend, and Amazon DynamoDB storage.
 
 **Live website:** http://expenseflow-website-2026-farmaan.s3-website.eu-north-1.amazonaws.com
+**for mobile browser:** http://expenseflow-website-2026-farmaan.s3-website.eu-north-1.amazonaws.com/
 
 ## Features
 - Add, view, edit, and delete expenses.
