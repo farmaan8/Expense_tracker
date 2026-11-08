@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseFlow - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ExpenseFlow</h1>
+        <p>Your personal cloud-based expense tracker.</p>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="stat-card"><h3>Total Spending</h3><p id="total">₹0.00</p></div>
+            <div class="stat-card"><h3>Transactions</h3><p id="transaction-count">0</p></div>
+            <div class="stat-card"><h3>Highest Expense</h3><p id="highest-expense">₹0.00</p></div>
+        </section>
+        <section class="container"><h2>Category-wise Spending</h2><div id="category-summary"></div></section>
+        <section class="container">
+            <h2>Add / Edit Expense</h2>
+            <form id="expense-form">
+                <input type="hidden" id="expense-id">
+                <input type="text" id="description" placeholder="Expense description" required>
+                <input type="number" id="amount" placeholder="Amount (₹)" min="0.01" step="0.01" required>
+                <select id="category">
+                    <option value="Food">Food</option><option value="Transport">Transport</option>
+                    <option value="Shopping">Shopping</option><option value="Education">Education</option>
+                    <option value="Bills">Bills</option><option value="Other">Other</option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" id="submit-button">Add Expense</button>
+            </form>
+        </section>
+        <section class="container"><h2>Expense History</h2><ul id="expense-list"></ul></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
